@@ -1,0 +1,29 @@
+/* Reusable CSS classes */
+.container {
+    max-width: 968px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.section {
+    padding: 5.5rem 0 1rem;
+
+    &__title, 
+    &__title-center {
+        margin-bottom: 2rem;
+
+        font-weight: $h3-fontsize;
+        line-height: 140%;
+
+        &-center {
+            text-align: center;
+        }
+    }
+}
+.grid {
+    display: grid;
+}
+
+.main {
+    overflow: hidden;
+}

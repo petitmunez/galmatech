@@ -1,0 +1,49 @@
+/* Footer Section */
+.footer {
+  &__container {
+    row-gap: 1.5rem;
+  }
+  &__logo {
+    & img {
+        margin-bottom: 1rem;
+        width: 150px;
+    }
+  }
+  &__title {
+    font-size: $h3-fontsize;
+    margin-bottom: 1.5rem;
+  }
+  
+  &__data {
+    display: grid;
+    row-gap: 0.75rem;
+  }
+  &__information {
+    font-size: $small-fontsize;
+  }
+  &__social {
+    display: inline-flex;
+    column-gap: 0.75rem;
+
+    &-link {
+      font-size: 1rem;
+      color: $text-color;
+      transition: 0.3s;
+
+      &:hover {
+        transform: translateY(-0.25rem);
+      }
+    }
+  }
+  &__copy {
+    text-align: center;
+    font-size: $small-fontsize;
+    color: $text-color-light;
+    margin: 5rem 0 1rem;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+}

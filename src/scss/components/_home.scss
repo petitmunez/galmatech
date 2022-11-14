@@ -1,0 +1,95 @@
+/* Home Section */
+.home {
+  padding: 3.5rem 0 3.5rem;
+
+  &__container {
+    position: relative;
+    row-gap: 2rem;
+  }
+
+  &__img {
+    justify-self: center;
+    width: 300px;
+    order: 2;
+
+    animation: float 4s ease-in-out infinite;
+
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-1.5rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    font-size: $h1-fontsize;
+    line-height: 140%;
+
+    & span {
+      color: $first-color;
+    }
+  }
+
+  &__description {
+    margin-bottom: 2.5rem;
+  }
+
+  &__social {
+    display: grid;
+    justify-items: center;
+    row-gap: 3.5rem;
+    position: absolute;
+    bottom: 16rem;
+    right: -1rem;
+
+    &-follow {
+      position: relative;
+
+      font-size: $smaller-fontsize;
+      font-weight: 600;
+      color: $first-color;
+
+      transform: rotate(90deg);
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -45%;
+        width: 1rem;
+        height: 2px;
+
+        background-color: $first-color;
+      }
+    }
+
+    &-links {
+      display: inline-flex;
+      flex-direction: column;
+      row-gap: 0.25rem;
+    }
+
+    &-link {
+      font-size: 1rem;
+      color: $first-color;
+
+      transition: all ease-in-out 0.4s;
+
+      &:hover {
+        transform: translateY(0.25rem);
+      }
+    }
+  }
+}

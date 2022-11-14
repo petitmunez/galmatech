@@ -1,0 +1,39 @@
+/* Variables */
+
+//Fonts
+@font-face {
+  font-family: "Uni Sans";
+  src: url("/src/fonts/Uni-Sans-Regular.otf") format("otf"),
+    url("/src/fonts/Uni-Sans-SemiBold.otf") format("otf"),
+    url("/src/fonts/Uni-Sans-Bold.otf") format("otf");
+}
+
+//Navbar size
+$navbar-height: 3.4rem; //56px
+
+//color
+$first-color: hsla(203, 94%, 28%, 1);
+$first-color-alt: hsla(203, 94%, 24%, 1);
+$first-color-light: hsla(203, 94%, 70%, 1);
+$first-color-lighten: hsla(203, 94%, 96%, 1);
+
+$title-color: hsl(203, 74%, 4%);
+$text-color-light: hsl(152, 4%, 55%);
+$text-color: hsl(152, 4%, 35%);
+$white-color: hsl(203, 0%, 100%);
+
+/* Font */
+$body-font: "Uni Sans", sans-serif;
+
+/* Typography */
+$h1-fontsize: 2rem;
+$h2-fontsize: 1.5rem;
+$h3-fontsize: 1.25rem;
+$h4-fontsize: 1rem;
+$normal-fontsize: 0.938rem;
+$small-fontsize: 0.813rem;
+$smaller-fontsize: 0.75rem;
+
+$regular-fontweight: 500;
+$semibold-fontweight: 600;
+$regular-fontweight: 700;

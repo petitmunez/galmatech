@@ -1,0 +1,91 @@
+/* Contact Section*/
+.contact {
+    margin-top: 5rem;
+  
+    background-color: $first-color-lighten;
+  
+    &__title {
+        font-size: $h1-fontsize;
+      & span {
+        font-size: $h2-fontsize;
+        font-weight: 500;
+        color: $first-color;
+      }
+    }
+    &__container {
+      row-gap: 3.5rem;
+  
+      padding-bottom: 5rem;
+    }
+    &__data {
+      display: grid;
+      row-gap: 2rem;
+    }
+    &__subtitle {
+      font-size: $normal-fontsize;
+      font-weight: 500;
+      color: $text-color;
+      margin-bottom: 0.5rem;
+    }
+    &__description {
+      display: inline-flex;
+      align-items: center;
+      column-gap: 0.5rem;
+      color: $title-color;
+      font-weight: 500;
+    }
+    &__icon {
+      font-size: 1.25rem;
+    }
+    &__inputs {
+      display: grid;
+      row-gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    &__content {
+      position: relative;
+      height: 3rem;
+      border-bottom: 1px solid $text-color-light;
+    }
+    &__input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 1rem 1rem 1rem 0;
+      background: none;
+      color: $text-color;
+      border: none;
+      outline: none;
+      z-index: 1;
+  
+      &:focus + .contact__label {
+        top: -0.75rem;
+        left: 0;
+        font-size: $smaller-fontsize;
+        z-index: 10;
+      }
+      &:not(:placeholder-shown).contact__input:not(:focus) + .contact__label {
+        top: -0.75rem;
+        font-size: $smaller-fontsize;
+        z-index: 10;
+      }
+    }
+    &__label {
+      position: absolute;
+      top: 0.75rem;
+      width: 100%;
+      font-size: $small-fontsize;
+      color: $text-color-light;
+      transition: 0.3s;
+    }
+    &__area {
+      height: 7rem;
+  
+      & textarea {
+        resize: none;
+      }
+    }
+  }
+  

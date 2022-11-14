@@ -1,0 +1,54 @@
+/* CTA Section */
+.cta {
+  position: relative;
+  padding: 2rem 1.5rem;
+  box-shadow: 00px -4px 15px -2px rgba(0, 0, 0, 0.65);
+
+  background-color: $first-color;
+
+  &__decoration {
+    position: absolute;
+    opacity: 0.8;
+
+    &-tl {
+      top: 0;
+      left: 0;
+      width: 100px;
+    }
+
+    &-br {
+      bottom: 0;
+      right: 0;
+      width: 100px;
+    }
+  }
+
+  &__data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    margin-bottom: .4rem;
+    font-size: $h2-fontsize;
+    color: $white-color;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: $h3-fontsize;
+    color: $white-color;
+  }
+
+  &__btn {
+    padding: 0.8rem 1.75rem;
+    background-color: #fff;
+
+    color: $first-color;
+
+    &:hover {
+      background-color: rgb(236, 236, 236);
+    }
+  }
+}

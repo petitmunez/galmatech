@@ -1,0 +1,38 @@
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: $white-color;
+
+  z-index: 100;
+  transition: all ease-in-out 0.4s;
+}
+
+/* Nav */
+@import "nav";
+
+/* Change background header */
+.scroll-header {
+  box-shadow: 0 1px 4px hsla(152, 4%, 15%, 0.1);
+}
+
+/* Active link */
+.active-link {
+  position: relative;
+  
+  color: $first-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 50%;
+    height: 2px;
+
+    background-color: $first-color;
+  }
+}

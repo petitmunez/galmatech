@@ -1,0 +1,32 @@
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 1rem 1.75rem;
+
+    border-radius: .4rem;
+
+    background-color: $first-color;
+
+    font-weight: 500;
+    color: $white-color;
+
+    transition: all ease-in-out 0.4s;
+
+    &__icon {
+        transition: all ease-in-out 0.4s;
+    }
+
+    &__flex {
+        display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+    }
+
+    &:hover {
+        background-color: $first-color-alt;
+    }
+
+    &:hover .button__icon{
+        transform: translateX(.25rem) translateY(.25rem);
+    }
+}
